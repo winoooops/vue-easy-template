@@ -1,40 +1,41 @@
 {
-  "name": "vue-easy-template",
-  "version": "1.0.0",
-  "description": "A easy way to generate Vue project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/winoooops/vue-easy-template.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/winoooops/vue-easy-template/issues"
-  },
-  "homepage": "https://github.com/winoooops/vue-easy-template#readme",
-  "dependencies": {
-    "vue": "^3.2.8"
-  },
-  "devDependencies": {
-    "@vue/compiler-sfc": "^3.2.8",
-    "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^6.2.0",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.3.2",
-    "optimize-css-assets-webpack-plugin": "^6.0.1",
-    "sass": "^1.39.0",
-    "sass-loader": "^12.1.0",
-    "style-loader": "^3.2.1",
-    "terser-webpack-plugin": "^5.2.2",
-    "vue-loader": "^16.5.0",
-    "webpack": "^5.51.2",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.1.0",
-    "webpack-merge": "^5.8.0"
-  }
+    "name": "vue-easy-template",
+    "version": "1.0.0",
+    "description": "A easy way to generate Vue project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "webpack-dev-server --open --config ./build/webpack.dev.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/winoooops/vue-easy-template.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/winoooops/vue-easy-template/issues"
+    },
+    "homepage": "https://github.com/winoooops/vue-easy-template#readme",
+    "dependencies": {
+        "vue": "^3.2.8"
+    },
+    "devDependencies": {
+        "@vue/compiler-sfc": "^3.2.8",
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.2.0",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.3.2",
+        "optimize-css-assets-webpack-plugin": "^6.0.1",
+        "sass": "^1.39.0",
+        "sass-loader": "^12.1.0",
+        "style-loader": "^3.2.1",
+        "terser-webpack-plugin": "^5.2.2",
+        "vue-loader": "^16.5.0",
+        "webpack": "^5.51.2",
+        "webpack-cli": "^4.8.0",
+        "webpack-dev-server": "^4.1.0",
+        "webpack-merge": "^5.8.0"
+    }
 }
