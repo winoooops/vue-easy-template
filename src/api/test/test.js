@@ -1,0 +1,1 @@
+./settings/plop/templates/api-template.hbs
