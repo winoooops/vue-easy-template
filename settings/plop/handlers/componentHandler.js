@@ -34,7 +34,8 @@ module.exports = {
             }
         })
         actions.push({
-
+            type: 'append',
+            path: './src/main.js',
         })
         return actions
     }
