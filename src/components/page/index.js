@@ -1,10 +1,4 @@
-<template>
+import Vue from 'vue'
+import page from './index.vue'
 
-</template>
-<script>
-    export default {
-        setup(props) {
-
-        }
-    }
-</script>
+Vue.component('page', page)

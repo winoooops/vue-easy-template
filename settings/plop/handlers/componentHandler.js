@@ -19,11 +19,22 @@ module.exports = {
         const actions = []
         actions.push({
             type: 'add',
-            path: `./src/components/${name}/index.js`,
+            path: `./src/components/${name}/index.vue`,
             templateFile: './settings/plop/templates/component-template.hbs',
             // data: {
             //     props
             // }
+        })
+        actions.push({
+            type: 'add',
+            path: `./src/components/${name}/index.js`,
+            templateFile: './settings/plop/templates/component-use.hbs',
+            data: {
+                name
+            }
+        })
+        actions.push({
+
         })
         return actions
     }
