@@ -36,6 +36,8 @@ module.exports = {
         actions.push({
             type: 'append',
             path: './src/main.js',
+            pattern: "import App from 'app'",
+            templateFile: './settings/plop/templates/component-main.hbs',
         })
         return actions
     }
