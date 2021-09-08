@@ -20,7 +20,7 @@ module.exports = {
         actions.push({
             type: 'add',
             path: `./src/components/${name}/index.vue`,
-            templateFile: './settings/plop/templates/component-template.hbs',
+            templateFile: './settings/plop/templates/component/component-template.hbs',
             // data: {
             //     props
             // }
@@ -28,7 +28,7 @@ module.exports = {
         actions.push({
             type: 'add',
             path: `./src/components/${name}/index.js`,
-            templateFile: './settings/plop/templates/component-use.hbs',
+            templateFile: './settings/plop/templates/component/component-use.hbs',
             data: {
                 name
             }
@@ -37,7 +37,7 @@ module.exports = {
             type: 'append',
             path: './src/main.js',
             pattern: "import App from 'app'",
-            templateFile: './settings/plop/templates/component-main.hbs',
+            templateFile: './settings/plop/templates/component/component-main.hbs',
         })
         return actions
     }

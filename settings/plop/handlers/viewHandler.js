@@ -1,3 +1,6 @@
+const { vModelCheckbox } = require('@vue/runtime-dom')
+const readFileList = require('../utils/readFileList')
+
 module.exports = {
     description: 'generate a view',
     prompts: [
@@ -14,28 +17,31 @@ module.exports = {
             default: null,
         },
         {
-            type: 'input',
-            name: 'apiSrc',
-            message: 'Please enter apiRepo(api/xxx): ',
-            default: null,
+            type: 'checkbox',
+            name: 'componentList',
+            message: 'please choose component',
+            choices: readFileList('./src/components'),
+            default: [],
         },
         {
-            type: 'input',
-            name: 'apiName',
-            message: 'Please enter apiName: ',
-            default: null,
-        }
+            type: 'checkbox',
+            name: 'apiList',
+            message: 'please choose api',
+            choices: readFileList('./src/api', true),
+            default: [],
+        },
     ],
     actions: data => {
-        const { src, name, apiSrc, apiName } = data
+        const { src, name, componentList, apiList } = data
         const actions = []
         actions.push({
             type: 'add',
             path: `./src/views/${src}/${name}.vue`,
-            templateFile: './settings/plop/templates/view-template.hbs',
+            templateFile: './settings/plop/templates/view/view-template.hbs',
             data: {
                 name,
-                api: `@/src/api/${apiSrc}/${apiName}.js`
+                componentList,
+                apiList,
             }
         })
 
