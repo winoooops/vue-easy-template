@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "serve": "webpack-dev-server --open --config ./build/webpack.dev.js",
-        "gen": "plop"
+        "generate": "plop"
     },
     "repository": {
         "type": "git",
@@ -21,7 +21,9 @@
     "homepage": "https://github.com/winoooops/vue-easy-template#readme",
     "dependencies": {
         "axios": "^0.21.1",
-        "vue": "^3.2.8"
+        "vue": "^3.2.8",
+        "vue-router": "^3.5.2",
+        "vuex": "^3.6.2"
     },
     "devDependencies": {
         "@vue/compiler-sfc": "^3.2.8",
