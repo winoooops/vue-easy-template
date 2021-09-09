@@ -37,7 +37,7 @@ See [plop configurations](https://github.com/winoooops/vue-easy-template/tree/ma
 
 1. **constantRoutes**: After `createApp()`, *Vue Router* gets loading with pages/components that don't require user info.
 
-2. **asyncRoutes**: Upon Login, compared user's role with each route's meta([vue-router](https://router.vuejs.org/guide/advanced/meta.html) recommandation) and generate a routeMap a given user can login.
+2. **asyncRoutes**: Upon Login, compared user's role with each route's meta([vue-router](https://router.vuejs.org/guide/advanced/meta.html){:target="_blank"}recommandation) and generate a routeMap a given user can login.
 
 3. **addRoutes**: Use `router.addRoutes(store.getters.addRouts)` to dynamically add user's routes
 
