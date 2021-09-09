@@ -23,7 +23,7 @@ module.exports = plop => {
 }
 ``` 
 
-## Generate a Component
+## Example: Generate a Component
 ### handler
 ```javascript
 module.exports = {
@@ -74,9 +74,7 @@ module.exports = {
 Use *handlerbars* to create templates
 
 
-
-
-## Generate a View
+## Example: Generate a View
 ```javascript
 const readFileList = require('../utils/readFileList')
 

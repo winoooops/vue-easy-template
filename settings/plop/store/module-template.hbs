@@ -1,0 +1,28 @@
+{{#each apiList}}
+    import {} from '{{ this }}'
+{{/each}}
+
+const {{module}} = {
+    state: {
+       /* your states properties */ 
+       {{#each getterList}}
+            {{this}}: null,
+       {{/each}}
+    }, 
+    commits: {
+        {{#each commitList}}
+            {{ this }}: () => {}, 
+        {{/each}}
+    },
+    actions: {
+        {{#each actionList}}
+            {{ this }}: ({ commit },payload) => {
+                return new Promise((resolve, reject) => {
+                    /* your action behaviors here */
+                })
+            },
+        {{/each}}
+    }
+}
+
+export default {{ module }}
