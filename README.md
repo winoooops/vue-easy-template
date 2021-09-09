@@ -2,9 +2,9 @@
 A easy way to generate Vue project
 
 ## Tabel of Content
-- [Feature](#)
-- [Usage]
-- [Plop Generator](#Plop Generator)
+- [Feature](#Features)
+- [Usage](#Usage)
+- [Plop Generator](#Plop)
 
 ## Features 
 - Basic Webpack Config
@@ -16,14 +16,15 @@ A easy way to generate Vue project
 ## Usage 
 
 ### Generate a **Component** 
-![Image Text]()
+![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/component.gif)
 ### Generate an **API**
-![Image Text]()
+![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/api.gif)
 ### Generate a **View**
-![Image Text]()
+![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/view.gif)
 
-## Plop Generator 
-[plop configurations](https://github.com/winoooops/vue-easy-template/tree/main/settings/plop)
+## Plop 
+The template Engine uses *plop* to generate business related files.
+See [plop configurations](https://github.com/winoooops/vue-easy-template/tree/main/settings/plop) for configuration details.
 
 
 ## Todos
