@@ -35,6 +35,7 @@ const readFileList = (src, isRecurseive = false, dirList = [], resultList = []) 
             resultList.push(ele)
         }
     })
+    console.log(resultList)
     return resultList
 }
 

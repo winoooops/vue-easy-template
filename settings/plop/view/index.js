@@ -1,5 +1,4 @@
-const { vModelCheckbox } = require('@vue/runtime-dom')
-const readFileList = require('../utils/readFileList')
+const readFileList = require('../../../src/utils/readFileList')
 
 module.exports = {
     description: 'generate a view',
@@ -37,7 +36,7 @@ module.exports = {
         actions.push({
             type: 'add',
             path: `./src/views/${src}/${name}.vue`,
-            templateFile: './settings/plop/templates/view/view-template.hbs',
+            templateFile: './settings/plop/view/view-template.hbs',
             data: {
                 name,
                 componentList,

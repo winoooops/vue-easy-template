@@ -1,6 +1,6 @@
-const viewHandler = require('./settings/plop/handlers/viewHandler.js')
-const apiHandler = require('./settings/plop/handlers/apiHandler.js')
-const componentHandler = require('./settings/plop/handlers/componentHandler.js')
+const viewHandler = require('./settings/plop/view')
+const apiHandler = require('./settings/plop/api')
+const componentHandler = require('./settings/plop/component')
 
 
 module.exports = plop => {
