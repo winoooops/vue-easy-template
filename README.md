@@ -18,21 +18,21 @@ A easy way to generate Vue project
 
 ## Usage 
 
-### Generate a **Component** 
-![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/component.gif)
-### Generate an **API**
-![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/api.gif)
-### Generate a **View**
-![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/view.gif)
-### Generate a **Store module**
-![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/store.gif)
-
-## Plop 
+### Plop 
 The template Engine uses *plop* to generate business related files.
 See [plop configurations](https://github.com/winoooops/vue-easy-template/tree/main/settings/plop) for configuration details.
 
+#### Generate a **Component** 
+![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/component.gif)
+#### Generate an **API**
+![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/api.gif)
+#### Generate a **View**
+![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/view.gif)
+#### Generate a **Store module**
+![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/store.gif)
 
-## Router & Permission 
+
+## Permission Control
 ### Typical Process
 
 1. **constantRoutes**: After `createApp()`, *Vue Router* gets loading with pages/components that don't require user info.
