@@ -1,10 +1,10 @@
 # Vue-Easy-template
 A easy way to generate Vue project
 
-## Tabel of Content
+## Table of Content
 - [Features](#Features)
 - [Plop Generator](#Plop)
-- [Permission](#Permission Control)
+- [Permissions](#Permissions)
 - [Todos](#Todos)
 
 ## Features 
@@ -28,7 +28,7 @@ See [plop configurations](https://github.com/winoooops/vue-easy-template/tree/ma
 ![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/store.gif)
 
 
-## Permission Control
+## Permissions
 ### Typical Process
 
 1. **constantRoutes**: After `createApp()`, *Vue Router* gets loading with pages/components that don't require user info.
