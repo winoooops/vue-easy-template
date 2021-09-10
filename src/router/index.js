@@ -1,8 +1,5 @@
-import VueRouter from "vue-router";
-import Vue from 'vue'
+import { createRouter, createWebHistory } from 'vue-router'
 import store from '../store'
-
-Vue.use(VueRouter)
 
 export const constantRoutes = [
     {
@@ -21,12 +18,14 @@ export const asyncRoutes = [
 ]
 
 // after createApp(), only load the constantRoutes
-const router = new VueRouter({
+const router = createRouter({
     routes: constantRoutes,
+    history: createWebHistory(),
 })
 
 router.beforeEach((to, from, next) => {
     // if the token has been stored 
+    console.log(store.getters)
     if (store.getters.token) {
         if (to.path === '/login') {
             next({ path: '/login' })
@@ -45,7 +44,8 @@ router.beforeEach((to, from, next) => {
                 .catch(err => console.error(err))
         }
     } else {
-        next({ path: '/login' })
+        console.log('poop')
+        next('/login')
     }
 })
 

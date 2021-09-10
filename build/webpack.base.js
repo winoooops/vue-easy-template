@@ -15,7 +15,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',
-        })
+        }),
+        new VueLoaderPlugin()
     ],
     module: {
         rules: [
@@ -23,10 +24,10 @@ module.exports = {
                 test: /\.vue$/,
                 use: 'vue-loader'
             },
-            {
-                test: /\.tsx$/,
-                use: 'ts-loader',
-            },
+            // {
+            //     test: /\.tsx$/,
+            //     use: 'ts-loader',
+            // },
             {
                 test: /\.(png|jpeg|jpg|gif)$/,
                 use: [{
@@ -53,7 +54,7 @@ module.exports = {
             '@': path.resolve('src')
         },
         // don't need to specify .js .json .tsx at the end when importing 
-        extensions: ['.js', 'json', 'css'],
+        extensions: ['.js', 'json', 'css', '.vue'],
         modules: [resolve('../node_modules'), 'node_modules'] // improve performance
     }
 }

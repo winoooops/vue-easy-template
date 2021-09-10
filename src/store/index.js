@@ -1,11 +1,10 @@
-import Vuex from 'vuex'
-import Vue from 'vue'
+import { createStore } from 'vuex'
 import getters from './getters'
+import user from './modules/user'
 
-Vue.use(Vuex)
-
-const store = new Vuex.Store({
+const store = createStore({
     modules: {
+        user
     },
     getters,
 })

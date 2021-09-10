@@ -1,4 +1,4 @@
-import axios from 'request'
+import axios from 'axios'
 
 const service = axios.create({
     // baseURL: process.env.VUE_APP_URL,
@@ -7,4 +7,4 @@ const service = axios.create({
     timeout: 1800000 // 增加响应时间
 })
 
-return service
+export default service
