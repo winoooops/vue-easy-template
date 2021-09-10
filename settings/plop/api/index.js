@@ -50,6 +50,12 @@ module.exports = {
         actions.push({
             type: 'add',
             path: `./src/api/${src}/${fileName}.js`,
+            template: `import request from '@/utils/request'`,
+            abortOnFail: false, // will not abort on fail for future actions
+        })
+        actions.push({
+            type: 'append',
+            path: `./src/api/${src}/${fileName}.js`,
             templateFile: './settings/plop/api/api-template.hbs',
             data: {
                 apiName,
