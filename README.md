@@ -2,23 +2,19 @@
 A easy way to generate Vue project
 
 ## Tabel of Content
-- [Feature](#Features)
-- [Usage](#Usage)
+- [Features](#Features)
 - [Plop Generator](#Plop)
+- [Permission](#Permission Control)
+- [Todos](#Todos)
 
 ## Features 
 - Basic Webpack Config
 - Vue 3 support with composition Api
-- Command-Line Tool for Component Generation
-- Command-Line Tool for Api Generation
-- Command-Line Tool for View Generation
-- Command-Line Tool for Store Generation
+- Command-Line Tool for Easy Vue Code Generation
 - Permission Contorl(ongoing)
 <!-- - Command-Line Tool for Router Generation  -->
 
-## Usage 
-
-### Plop 
+## Plop
 The template Engine uses *plop* to generate business related files.
 See [plop configurations](https://github.com/winoooops/vue-easy-template/tree/main/settings/plop) for configuration details.
 
