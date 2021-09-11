@@ -16,7 +16,7 @@ A easy way to generate Vue project
 
 ## Plop
 The template Engine uses *plop* to generate business related files.
-See [plop configurations](https://github.com/winoooops/vue-easy-template/tree/main/settings/plop) for configuration details.
+See [plop configurations](https://github.com/winoooops/vue-easy-template/tree/main/plop) for configuration details.
 
 #### Generate a **Component** 
 ![Image Text](https://github.com/winoooops/vue-easy-template/blob/main/instructions/assets/component.gif)
