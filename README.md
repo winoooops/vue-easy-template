@@ -8,8 +8,8 @@ A easy way to generate Vue project
 - [Todos](#Todos)
 
 ## Features 
-- Basic Webpack Config
-- Vue 3 support with composition Api
+- Vue-Cli support
+- Composition Api
 - Command-Line Tool for Easy Vue Code Generation
 - Permission Contorl(ongoing)
 <!-- - Command-Line Tool for Router Generation  -->
