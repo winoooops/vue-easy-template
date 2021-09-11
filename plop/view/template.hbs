@@ -1,0 +1,20 @@
+<template>
+    <div>
+
+    </div>
+</template>
+
+<script lang="ts">
+import { ref, Ref} from 'vue'
+
+{{#each apiList}}
+  import { } from '{{this}}'
+{{/each}}
+
+export default {
+  setup():Ref {
+    const data = ref()
+    return data
+  }
+}
+</script>

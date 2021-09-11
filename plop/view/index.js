@@ -36,7 +36,7 @@ module.exports = {
     actions.push({
       type: 'add',
       path: `./src/views/${src}/${name}.vue`,
-      templateFile: './settings/plop/view/view-template.hbs',
+      templateFile: './plop/view/template.hbs',
       data: {
         name,
         componentList,

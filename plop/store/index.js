@@ -52,8 +52,8 @@ module.exports = {
     // first create module
     actions.push({
       type: 'add',
-      path: `./src/store/modules/${module}/index.js`,
-      templateFile: './settings/plop/store/module-template.hbs',
+      path: `./src/store/modules/${module}/index.ts`,
+      templateFile: './plop/store/modules.hbs',
       data: {
         getterList,
         commitList,
@@ -64,9 +64,9 @@ module.exports = {
     // secondly create getters
     actions.push({
       type: 'append',
-      path: `./src/store/getters.js`,
+      path: `./src/store/getters.ts`,
       pattern: /\{/,
-      templateFile: `./settings/plop/store/getter-template.hbs`,
+      templateFile: `./plop/store/getters.hbs`,
       data: {
         module,
         getterList,

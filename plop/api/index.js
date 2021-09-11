@@ -10,7 +10,7 @@ module.exports = {
     {
       type: 'input',
       name: 'fileName',
-      message: 'Please enter file name(xxx.js): ',
+      message: 'Please enter file name(xxx.ts): ',
       default: null,
     },
     {
