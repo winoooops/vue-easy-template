@@ -81,4 +81,4 @@ const router = new VueRouter({
 - [ ] Custom File Generator using *inquery.js*
 - [ ] Custom Command-line Tool 
 - [ ] Add *Jenkins* for Auto-Deployment
-- [ ] Full *TypeScript* Support
+- [x] Full *TypeScript* Support
