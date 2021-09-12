@@ -1,24 +1,15 @@
 <template>
-  <div class="login">
-    <div class="login-row">
-      <span>Username: </span>
-    </div>
-    <div class="login-row">
-      <span>Password: </span>
-    </div>
-  </div>
+  <div></div>
 </template>
 
-<script>
-import { reactive, toRefs } from "vue";
-import {} from "@/api/user/loginManage.js";
-export default {
-  components: {},
-  props: {},
-  setup(props) {
-    const data = reactive({});
-    return toRefs(data);
-  },
-};
-</script>
+<script lang="ts">
+import { Ref, ref, defineComponent } from "vue";
 
+export default defineComponent({
+  name: "Login",
+  setup(): Ref {
+    const data = ref();
+    return data;
+  },
+});
+</script>
