@@ -20,7 +20,7 @@ module.exports = {
       'single'
     ],
     "indent": ["error", 2],
-    "no-var-requires": true,// allow require() in .js 
+    "no-var-requires": 0,// allow require() in .js 
     // 'import/extensions': ['error', { js: 'always', ts: 'always', tsx: 'always', vue: 'always' }, 'never']
   },
   overrides: [

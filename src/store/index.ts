@@ -1,22 +1,24 @@
-import { createStore, Store, useStore as baseUseStore } from 'vuex';
+import { createStore, useStore as baseUseStore, Store } from 'vuex';
 import { InjectionKey } from 'vue'
-import { State } from '../models'
+import getters from './getters'
+/* Do not delete the following line*/
+// import state interfaces 
+import User, { UserState } from './modules/user'
 
-export const key: InjectionKey<Store<State>> = Symbol()
+export const key: InjectionKey<Store<RootState>> = Symbol()
 
-export const store = createStore<State>({
-  state: {
-    version: 'v4.x',
-    app: 'vue-easy-template',
-    created: 'winoooops',
-  },
+export interface RootState {
+  user: UserState,
+}
+
+export const store = createStore<RootState>({
   modules: {
-
+    user: User,
   },
-  getters: {
-
-  }
+  getters,
 })
+
+
 
 export function useStore() {
   return baseUseStore(key)

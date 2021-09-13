@@ -11,11 +11,12 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "checkJs": false,
+    "experimentalDecorators": true,
     "baseUrl": ".",
     "types": [
       "webpack-env",
       "mocha",
-      "chai"
+      // "chai"
     ],
     "paths": {
       "@/*": [

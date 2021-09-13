@@ -32,12 +32,16 @@ const readFileList = (src, isRecurseive = false, dirList = [], resultList = []) 
     } else { // if it is not a directory
       // format the dirtory string
       let ele = fullPath.split(path.sep).join('/').replace('src', '@')
-      resultList.push(ele)
+      let filePath = ele.split('.')[0]
+      if (ele.split('.')[1] !== 'ts') return
+      else {
+        resultList.push(ele)
+      }
+      resultList.push(filePath)
+
     }
   })
   return resultList
 }
-
-readFileList('./src/api', [], true)
 
 module.exports = readFileList

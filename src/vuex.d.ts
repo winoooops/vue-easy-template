@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { Store } from 'vuex'
 import { ComponentCustomProperties } from 'vue'
-import { State } from './models'
+import { State } from '@/store'
 
 declare module '@vue/runtime-core' {
 
